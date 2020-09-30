@@ -10,7 +10,7 @@ app.set('json spaces', 2);
 // middlewares
 app.use(morgan('dev'));// peticiones
 app.use(express.urlencoded({extended: false}));// interpreta los datos enviados desde algun formulario
-app.use(express.json());// permite que el servidor resiva parametros json
+app.use(express.json());// permite que el servidor reciba parametros json
 
 // routes
 app.use(require('./routes/index')); // utiliza desde la carpeta routes el archivo index.js
